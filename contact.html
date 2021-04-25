@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ecole de musique AMSP</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="en-tete">
+      <a href="index.html">L'ECOLE</a>
+      <a href="agenda.html">AGENDA</a>
+      <a href="contact.html" class="actif">CONTACT</a>
+    </div>
+    <div class="pour-hr-titre"><hr/></div>
+    <h1>Ecole de <br/><mark>Musique</mark><br/> de Sausset les Pins</h1>
+
+    <div class="table-conteneur">
+      <table>
+        <caption>Nous contacter</caption>
+        <tr>
+          <th>
+            <form action="404.html">
+
+
+              <label for="name"></label><br>
+              <input type="name" id="name" placeholder="Nom" autofocus="" required=""><br>
+
+
+              <label for="email"></label><br>
+              <input type="email" id="email" placeholder="Mail" required=""><br>
+
+
+              <label for="phone"></label><br>
+              <input type="phone" id="phone" placeholder="Téléphone" required="" pattern="0[0-9]{9}"><br>
+
+
+              <label for="message"></label><br>
+              <input type="text" id="message" placeholder="Message" required="" ><br>
+              
+              <br><br>
+
+              <input type="submit" value= "Envoyez" >
+            </form>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+
+    <script type="text/javascript">
+      $(function() {
+        $('form').submit(function(){
+          $.post('404.html', function() {
+            window.location = '404.html';
+          });
+          return false;
+        });
+      });
+      </script>
+
+
+  </body>
+</html>

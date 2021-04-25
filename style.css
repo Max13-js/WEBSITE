@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200&display=swap');
+
+body {
+  margin: 0px;
+  background-color: black;
+  background-image: url(guitare.jpg);
+  background-repeat: no-repeat;
+  background-position:50% 50%;
+  background-attachment: fixed;
+  color: white;
+}
+
+h1 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 40pt;
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: auto;
+  padding-top: 0px;
+  line-height: 1;
+}
+
+h2 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 30pt;
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: auto;
+  padding-top: 0px;
+}
+
+h3 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 15pt;
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: auto;
+  padding-top: 0px;
+}
+
+h4 {
+  font-family: 'Antonio', sans-serif;
+  font-size: 16pt;
+  text-align: center;
+}
+
+mark {
+  background-color: transparent;
+  color: orange;
+}
+
+/* En tête */
+
+.en-tete {
+  background-color: black;
+  font-size: 24pt;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  padding: 6px;
+}
+
+.en-tete a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  transition: all 0.25s ease-out;
+}
+
+.en-tete a:hover{
+  color: orange;
+}
+
+.en-tete a.actif {
+  color: orange;
+}
+
+/* titres */
+
+.pour-hr {
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: auto;
+  margin-top: 120px;
+  text-align: left;
+}
+
+.pour-hr-titre {
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: left;
+}
+
+hr {
+  margin-left: 0px;
+  width: 40px;
+  height: 3px;
+  background-color: white;
+  border: none;
+  transform: translate(2px, 10px);
+}
+
+/* articles */
+
+.contenu {
+  font-family: 'Antonio', sans-serif;
+  font-size: 12pt;
+  width: 60%;
+  min-width: 380px;
+  max-width: 870px;
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: justify;
+  padding: 5px;
+}
+
+.flottante {
+  float: left;
+  width: 350px;
+  margin: 5px;
+}
+
+.liste-note {
+  list-style: none;
+}
+
+.liste-note li {
+  line-height: 13pt;
+}
+
+.liste-note li::before {
+  content: "♪";
+  font-size: 18pt;  
+  color: orange;
+  margin-right: 5px;
+}
+
+/* tableau */
+
+.table-conteneur {
+  width: 60%;
+  min-width: 800px;
+  max-width: 870px;
+  margin: 10px auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+caption {
+  padding-top: 5px;
+  margin: 0px;
+}
+
+table {
+  letter-spacing: 2px;
+  font-family: 'Antonio', sans-serif;
+  font-size: 14pt;
+  width: 90%;
+  margin: auto;
+  border-spacing: 0px 20px;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+td {
+  text-align: left;
+  width: 125px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+th img{
+  vertical-align: middle;
+  height: 80px;
+}
+
+tr:hover td, tr:hover th {
+  border-top: 2px solid orange;
+  border-bottom: 2px solid orange;
+}
+
+tr:hover th img {
+  width: 0px;
+  height: 80px;
+}
+
+table input[type=button] {
+  width: 125px;
+  border : 0;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 150, 0);  
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=button]:hover {
+    background-color: rgb(255, 120, 30);
+}
+
+/* page contact */
+
+legend{
+  color: #9D3E0C ;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+}
+
+label{
+  font-size: 15px;
+  color: #26619C;
+  font-family: 'Antonio', sans-serif;
+  font-weight: bold;
+}
+
+#conteneur{
+  margin:auto;
+  width:1024px;
+}
+
+label:hover{
+  color: orange;
+}
+
+.right_align {
+    text-align: right;
+    margin : 0px;
+}
+
+/* diapos */
+
+.diapo-conteneur {
+  position: relative;
+  width: 528px;
+  height: 352px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.diapo {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 2640px;
+  height: 352px;
+  padding: 0px;
+  margin: 0px;
+  transition: 1s all;
+}
+
+.vignettes {
+  text-align: center;
+}
+
+.vignettes img {
+  width: 64px;
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.vignettes img:hover {
+  border: 2px solid orange;
+}
+
+.vignettes img.active {
+  border: 2px solid orange;
+}
+
+/* date */
+
+span.jour {
+  font-size: 30pt;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+span.date {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+span.date span {
+  display: block;
+  text-align: center;
+}
+
+table input[type=submit] {
+  width: 200px;
+  border : 0;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 150, 0);  
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=submit]:hover {
+    background-color: rgb(209, 113, 49);
+}
+
+table input[type=text] {
+  width: 200px;
+  border : 0;
+  padding: 50px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 255, 255); 
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=text]:hover {
+    background-color: rgb(209, 113, 49);
+}
+
+table input[type=email] {
+  width: 200px;
+  border : 0;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 255, 255); 
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=email]:hover {
+    background-color: rgb(209, 113, 49);
+}
+
+table input[type=name] {
+  width: 200px;
+  border : 0;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 255, 255) ;
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=name]:hover {
+    background-color: rgb(209, 113, 49);
+}
+
+table input[type=phone] {
+  width: 200px;
+  border : 0;
+  padding: 5px;
+  font-size: 20px;
+  font-family: 'Antonio', sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 0px;
+  background-color: rgb(255, 255, 255); 
+  transition: all 0.2s ease-out;             
+}
+
+table input[type=phone]:hover {
+    background-color: rgb(209, 113, 49);
+}
