@@ -1,4 +1,4 @@
- <script type="text/javascript">
+
       $(function() {
         $('form').submit(function(){
           $.post('404.html', function() {
@@ -7,4 +7,4 @@
           return false;
         });
       });
-      </script>
+
